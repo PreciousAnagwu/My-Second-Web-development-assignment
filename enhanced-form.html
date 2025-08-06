@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+       <meta charset="UTF-8" />
+       <meta name="viewport" content="width=device-width, initial-scale=1.0" /> 
+       <meta name="description" content="An HTML5 assignment showcasing lists, tables, media, and forms with accessibility and validation.">
+       <title>Enhanced HTML5 Content & Mastering Forms</title>
+        <style>
+  table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+  }
+</style>
+    </head>
+
+    <body>
+        <!--This is my header section - a little into about this page-->
+        <header>
+            <h3> Welcome to My Assignment Web Page on Enhancing HTML5 Content & Mastering Forms</h3>
+            <p> This page is my second assignment on web development, it demonstrates the use of HTML5 lists, table, media, and form validation without JavaScript.</p>
+                <p> Let's get started!😉</p>
+        </header>
+        <hr />
+        
+        <main>
+        <!--This is my lists Section-a little dive in about me-HTML5 list Examples for my assignment-->
+        <section>
+            <h3> Precious's Hobbies and Routine </h3>
+            <fieldset>
+            <h4> My Hobbies</h4>
+            <ol>
+                <li>Researching</li>
+                <li>Partaking on educational trainings</li>
+                <li>Coding</li>
+                <li>Sip and Paint</li>
+            </ol>
+
+            <h4> Daily Routine</h4>
+            <ul type= "square">
+                <li> Wake up, Pray, Get ready for work</li>
+                <li> Work and Practice Coding</li>
+                <li> Get ready for bed and Sleep</li>
+            </ul>
+            </fieldset>
+        </section>
+
+        <!--This is my table section-following assignment instructions-->
+        <section>
+        <h3> Course Schedule</h3>
+        <fieldset>
+        <table>
+
+<thead>
+    <tr>
+        <th>Day</th>
+        <th>Course</th>
+        <th>Sessions</th>
+    </tr>
+</thead>
+
+<tbody>
+<tr>
+    <td>Monday</td>
+    <td>Web Development</td>
+    <td>4:30 PM</td>
+</tr>
+
+<tr>
+    <td>Tuesday</td>
+    <td>Python Programming</td>
+    <td>12:00 PM</td>
+</tr>
+
+<tr>
+    <td>Wednesday</td>
+    <td>Nil</td>
+    <td>Nil</td>
+</tr>
+
+<tr>
+    <td>Thursday</td>
+    <td>Database & Design</td>
+    <td>8:00 AM</td>
+</tr>
+
+<tr>
+    <td>Friday</td>
+    <td>Nil</td>
+    <td>Nil</td>
+</tr>
+    </tbody>
+        </table>
+        </fieldset>
+        </section>
+
+        <!--This is my Media Section-following assignment instructions--->
+        <section>
+        <h3>My Tech Media </h3>
+        <fieldset>
+            <h4>Image</h4>
+             <!--image media-->
+        <img src="Tech.jpeg" alt="Tech image" width="300" />
+
+             <!--Audio media-->
+             <h4>Audio</h4>
+        <audio controls>
+            <source src="Future-Technology(chosic.com).mp3" type="audio/mp3">
+            Your browser does not support the audio element.
+        </audio>
+
+             <!--Video media-->
+             <h4>Video</h4>
+        <iframe width="320" height="240"
+            src = "https://www.youtube.com/embed/-sB12gk9ESA"
+            title="YouTube video player"
+            frameborder="0" 
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+    allowfullscreen>
+            Your browser does not support the video element.
+        </iframe>
+        </fieldset>
+        </section>
+
+        <!--This is my Form section- following my assignment instruction-->
+           <section>
+           <h3>Registration Form</h3>
+           <form action="#" method="post" autocomplete="on">
+
+            <fieldset>
+                <legend>Personal Information</legend>
+
+                <label for="fullname">Full Name:</label><br>
+                <input type="text" id="fullname" name="fullname" required placeholder="Enter your full name" autocomplete ="name"><br><br>
+
+                 <label for="email">Email:</label><br>
+                 <input type="email" id="email" name="email" required placeholder="example@mail.com" autocomplete="email"><br><br>
+
+                 <label for="age">Age:</label><br>
+                 <input type="number" id="age" name="age" min="10" max="100" required><br><br>
+
+                 <label for="dob">Date of Birth:</label><br>
+                 <input type="date" id="dob" name="dob" required><br><br>
+
+                 <label for="gender">Gender:</label><br>
+                <select id="gender" name="gender" required>
+                 <option value="">--Select--</option>
+                 <option value="female">Female</option>
+                <option value="male">Male</option>
+                <option value="other">Other</option>
+        </select><br><br>
+            </fieldset>
+
+            
+      <fieldset>
+        <legend>Account Preferences</legend>
+
+        <label for="username">Username:</label><br>
+        <input type="text" id="username" name="username" required minlength="5" autocomplete="username"><br><br>
+
+        <label for="password">Password:</label><br>
+        <input type="password" id="password" name="password" required minlength="6" pattern=".{6,}"><br><br>
+
+        <label for="bio">Short Bio:</label><br>
+        <textarea id="bio" name="bio" rows="4" cols="40" placeholder="Tell us about yourself..." maxlength="200"></textarea><br><br>
+
+        <label for="referral">Referral Code:</label><br>
+        <input type="text" id="referral" name="referral" value="Precious baby 2025" readonly><br><br>
+
+
+        <label>
+          <input type="checkbox" name="subscribe" checked>
+          Subscribe to newsletter
+        </label><br><br>
+
+        <label>
+          <input type="radio" name="updates" value="yes" required>
+          Yes, send me updates
+        </label>
+        <label>
+          <input type="radio" name="updates" value="no" required>
+          No, don't send updates
+        </label><br><br>
+
+        <input type="submit" value="Register">
+        <input type="reset" value="Clear Form">
+
+      </fieldset>
+    </form>
+  </section>
+</main>
+  <!--This is my footer- This assignment was done with care and attention to details-->
+  <footer>
+    <p>&copy; 2025 Precious Anagwu</p>
+  </footer>
+
+    </body>
+</html>
